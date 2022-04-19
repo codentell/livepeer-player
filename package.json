@@ -1,17 +1,18 @@
 {
   "name": "livepeer-player",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "Livepeer Player Component",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "files": [
     "dist"
   ],
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "next build",
     "start": "next start",
     "ds:build": "rollup -c",
-    "ds:release": "yarn ds:build && np"
+    "ds:release": "yarn ds:build && npm publish"
   },
   "peerDependencies": {
     "react": "^18.0.0",
