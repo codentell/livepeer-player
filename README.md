@@ -1,2 +1,2 @@
-# livepeer-player-sample
-Livepeer Player Sample
+# Livepeer Player Component
+
