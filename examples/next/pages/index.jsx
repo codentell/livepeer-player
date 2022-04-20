@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Player } from "livepeer-player/dist/components/Player"; // point to where the functional component is stored
+import React from "react";
+import { Player } from "livepeer-player"; // point to where the functional component is stored
 
 
 

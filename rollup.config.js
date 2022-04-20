@@ -1,4 +1,5 @@
 import typescript from "rollup-plugin-typescript2";
+import css from "rollup-plugin-import-css";
 import pkg from "./package.json";
 
 const config = {
@@ -11,14 +12,14 @@ const config = {
     {
       file: pkg.module,
       format: "es",
-    },
+    }
   ],
   external: [
-    "video.js/dist/video-js.css",
     ...Object.keys(pkg.dependencies || {}),
     ...Object.keys(pkg.peerDependencies || {}),
   ],
   plugins: [
+    css(),
     typescript({
       clean: true,
       tsconfig: "tsconfig-rollup.json",

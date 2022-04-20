@@ -1,6 +1,6 @@
 {
   "name": "livepeer-player",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Livepeer Player Component",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
@@ -31,6 +31,7 @@
   "dependencies": {
     "@rollup/plugin-commonjs": "^21.1.0",
     "@rollup/plugin-node-resolve": "^13.2.1",
+    "rollup-plugin-import-css": "^3.0.3",
     "tslib": "^2.3.1",
     "video.js": "^7.18.1",
     "videojs-contrib-hls": "^5.15.0",
