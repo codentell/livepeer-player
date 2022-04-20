@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import VideoJS from "../components/VideoJS"; // point to where the functional component is stored
+import { Player } from "livepeer-player/dist/components/Player"; // point to where the functional component is stored
 
 
 
 const Livepeer = ({ stream }) => {
-    const playbackURL = "https://livepeercdn.com/hls/1fcae6n18ljto86h/index.m3u8"
+    const playbackURL = "https://livepeercdn.com/hls/ba42he2hjl9s26d5/index.m3u8"
 
     const playerRef = React.useRef(null);
 
@@ -38,7 +38,7 @@ const Livepeer = ({ stream }) => {
     };
 
     return (
-        <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />)
+        <Player options={videoJsOptions} onReady={handlePlayerReady} />)
 };
 
 export default Livepeer;

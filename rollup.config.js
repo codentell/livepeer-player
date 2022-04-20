@@ -14,6 +14,7 @@ const config = {
     },
   ],
   external: [
+    "video.js/dist/video-js.css",
     ...Object.keys(pkg.dependencies || {}),
     ...Object.keys(pkg.peerDependencies || {}),
   ],
